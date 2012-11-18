@@ -1,3 +1,3 @@
-require './hello-world'
+require './web'
 
 run Cuba
