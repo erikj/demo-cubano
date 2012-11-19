@@ -17,5 +17,9 @@ Cuba.define do
     on "readme" do
       res.write render 'README.md'
     end
+    on 'haml' do
+      res.write render 'haml.haml'
+    end
+
   end
 end
