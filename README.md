@@ -1,4 +1,4 @@
-# cuba-demo
+# demo-cubano
 
 ## About
 
