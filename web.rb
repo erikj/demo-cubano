@@ -1,5 +1,7 @@
 require "cuba"
 require "cuba/render"
+require 'haml'
+require 'redcarpet'
 
 Cuba.plugin Cuba::Render
 # Cuba.use Rack::Session::Cookie
