@@ -7,7 +7,7 @@ Demo of Cuba web microframework
 - <http://soveran.github.com/cuba/>
 - <https://github.com/soveran/cuba>
 
-Source code available @ <https://github.com/erikj/cuba-demo>
+Source code available @ <https://github.com/erikj/demo-cubano>
 
 ## Getting Started
 
