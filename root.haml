@@ -1,16 +1,9 @@
-!!!
-%html
-  %head
-    %link{ 'rel'=> 'stylesheet', 'type'=> 'text/css', 'href'=> 'css/gfm.css' }
-    %title HAML
-  %body
-    #container
-      #readme
-        = render 'README.md'
-      #code
-        %h2 Code
-        This page was generated via the following code,
-        %code= __FILE__
-        \:
-        %pre
-          = File.read __FILE__
+#readme
+  = render 'README.md'
+#code
+  %h2 Code
+  This page was generated via the following code,
+  %code= __FILE__
+  \:
+  %pre
+    = File.read __FILE__
