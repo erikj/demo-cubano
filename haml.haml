@@ -1,7 +1,8 @@
 !!!
 %html
   %head
+    %link{ 'rel'=> 'stylesheet', 'type'=> 'text/css', 'href'=> 'css/gfm.css' }
     %title HAML
   %body
     #container
-      Hello HAML!
+      = render 'README.md'
