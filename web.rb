@@ -11,14 +11,11 @@ Cuba.define do
     end
 
     on root do
-      res.redirect "/hello"
+      res.write render 'root.haml'
     end
 
     on "readme" do
       res.write render 'README.md'
-    end
-    on 'haml' do
-      res.write render 'haml.haml'
     end
 
     on 'css', extension('css') do |file|
