@@ -11,7 +11,7 @@ Cuba.define do
     end
 
     on root do
-      res.write render('views/layout.haml') { render('root.haml') }
+      res.write render('views/layout.haml') { render('views/root.haml') }
     end
 
     on "readme" do
