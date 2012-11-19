@@ -21,5 +21,10 @@ Cuba.define do
       res.write render 'haml.haml'
     end
 
+    on 'css', extension('css') do |file|
+      res.headers["Content-Type"] = "text/css; charset=utf-8"
+      res.write File.read "css/#{file}.css"
+    end
+
   end
 end
