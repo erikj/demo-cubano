@@ -5,4 +5,12 @@
     %title HAML
   %body
     #container
-      = render 'README.md'
+      #readme
+        = render 'README.md'
+      #code
+        %h2 Code
+        This page was generated via the following code,
+        %code= __FILE__
+        \:
+        %pre
+          = File.read __FILE__
