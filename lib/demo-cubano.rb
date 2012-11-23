@@ -10,7 +10,7 @@ class DemoCubano < Cuba
   define do
     on get do
       on "hello" do
-        res.write "Hello world!"
+        res.write render('views/layout.haml') { "<h1>Hello world!</h1>" }
       end
 
       on root do
@@ -18,7 +18,7 @@ class DemoCubano < Cuba
       end
 
       on "readme" do
-        res.write render 'README.md'
+        res.write render('views/layout.haml') { render 'README.md' }
       end
 
       on 'css', extension('css') do |file|
