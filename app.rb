@@ -1,4 +1,4 @@
-require './lib/demo-cubano'
+require File.join File.expand_path( File.dirname __FILE__ ), 'lib', 'demo-cubano'
 
 # Cuba.use Rack::Reloader, 0
 
