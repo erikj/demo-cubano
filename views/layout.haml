@@ -1,9 +1,16 @@
+- title ||= nil
+
 !!!
 %html
   %head
     %link{ 'rel'=> 'stylesheet', 'type'=> 'text/css', 'href'=> 'css/gfm.css' }
-    %title demo-cubano
+    - if title
+      %title= title
+    - else
+      %title Demo Cubano
   %body
+    - if title
+      %h1= title
     #container
 
       = yield
