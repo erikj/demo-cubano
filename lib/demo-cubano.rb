@@ -6,7 +6,6 @@ require 'redcarpet'
 Cuba.plugin Cuba::Render
 
 class DemoCubano < Cuba
-
   define do
     on get do
       on "hello" do
@@ -24,8 +23,8 @@ class DemoCubano < Cuba
       on "inspect" do
         res.write render('views/layout.haml') {
           [
-           render( 'views/inspect.haml', {:o=>req} ),
-           render( 'views/inspect.haml', {:o=>res} )
+           render( 'views/inspect.haml', {:o=>req, :float=>'left'},  :ugly=>true ),
+           render( 'views/inspect.haml', {:o=>res, :float=>'right'}, :ugly=>true )
           ].join("\n")
         }
       end

@@ -1,13 +1,15 @@
 - def sanitize(html); html.to_s.gsub(/</, '&lt').gsub(/>/, '&gt'); end
 
-%h2= [ o.class, o.object_id ].join(' ')
+%div{:style=>"width:350px;float:#{float};"}
+  %h2= o.class.to_s
 
-%pre
-  - o.instance_variables.each do |key|
-    - value = o.instance_variable_get key
-    - if value.kind_of? Hash
-      = "<b>#{sanitize(key)}:</b>"
-      - value.each do |key2,value2|
-        = "\t<b>#{sanitize(key2)}:</b> #{sanitize(value2)}"
-    - else
-      = "<b>#{sanitize(key)}:</b>\t#{sanitize(value)}"
+  %pre
+    = "<b>object_id</b>:\t#{o.object_id}"
+    - o.instance_variables.each do |key|
+      - value = o.instance_variable_get key
+      - if value.kind_of? Hash
+        = "<b>#{sanitize(key)}:</b>"
+        - value.each do |key2,value2|
+          = "\t<b>#{sanitize(key2)}:</b> #{sanitize(value2)}"
+      - else
+        = "<b>#{sanitize(key)}:</b>\t#{sanitize(value)}"
