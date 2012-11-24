@@ -21,6 +21,15 @@ class DemoCubano < Cuba
         res.write render('views/layout.haml') { render 'README.md' }
       end
 
+      on "inspect" do
+        res.write render('views/layout.haml') {
+          [
+           render( 'views/inspect.haml', {:o=>req} ),
+           render( 'views/inspect.haml', {:o=>res} )
+          ].join("\n")
+        }
+      end
+
       on 'css', extension('css') do |file|
         res.headers["Content-Type"] = "text/css; charset=utf-8"
         res.write File.read "css/#{file}.css"
