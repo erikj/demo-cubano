@@ -21,7 +21,7 @@ class DemoCubano < Cuba
       end
 
       on "inspect" do
-        res.write render('views/layout.haml') {
+        res.write render('views/layout.haml', :title=>'Demo Cubano') {
           [
            render( 'views/inspect.haml', {:o=>req, :float=>'left'},  :ugly=>true ),
            render( 'views/inspect.haml', {:o=>res, :float=>'right'}, :ugly=>true )
