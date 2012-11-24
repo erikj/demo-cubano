@@ -13,7 +13,7 @@ class DemoCubano < Cuba
       end
 
       on root do
-        res.write render('views/layout.haml') { render('views/root.haml') }
+        res.write render('views/layout.haml') { render('views/index.haml') }
       end
 
       on "readme" do
