@@ -34,6 +34,11 @@ class DemoCubano < Cuba
         res.write File.read "css/#{file}.css"
       end
 
+      on true do
+        res.status = 404
+        res.write "<h1>404: Not Found</h1>"
+      end
+
     end
   end
 
