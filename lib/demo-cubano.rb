@@ -29,9 +29,10 @@ class DemoCubano < Cuba
         }
       end
 
-      on 'css', extension('css') do |file|
+      css_dir = 'css'
+      on css_dir, extension('css') do |file|
         res.headers["Content-Type"] = "text/css; charset=utf-8"
-        res.write File.read "css/#{file}.css"
+        res.write File.read "#{css_dir}/#{file}.css"
       end
 
       on true do
