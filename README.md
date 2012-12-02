@@ -4,9 +4,6 @@
 
 Demo of Cuba web microframework
 
-- <http://soveran.github.com/cuba/>
-- <https://github.com/soveran/cuba>
-
 Source code available @ <https://github.com/erikj/demo-cubano>
 
 ## Getting Started
@@ -18,3 +15,9 @@ Source code available @ <https://github.com/erikj/demo-cubano>
     [2012-11-18 17:12:57] INFO WEBrick::HTTPServer#start: pid=7996 port=9292
 
     % open http://localhost:9292
+
+## Reference
+
+- <http://soveran.github.com/cuba/>
+- <https://github.com/soveran/cuba>
+- <https://github.com/lucasefe/rubyconfar-2012/>
